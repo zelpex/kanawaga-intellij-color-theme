@@ -1,7 +1,7 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.boykore.kanawagaintellijcolortheme</id>
-    <name>kanawaga-intellij-color-theme</name>
+    <name>kanawaga-color-theme</name>
     <vendor>boykore</vendor>
 
     <depends>com.intellij.modules.platform</depends>
@@ -11,5 +11,8 @@
     <extensions defaultExtensionNs="com.intellij">
         <toolWindow factoryClass="com.github.boykore.kanawagaintellijcolortheme.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
         <postStartupActivity implementation="com.github.boykore.kanawagaintellijcolortheme.startup.MyProjectActivity" />
+        <themeProvider id="4dd7f5be-49bd-4239-98fc-308467132cfe" path="/kanawaga_wave.theme.json"/>
+        <themeProvider id="893f3069-57bd-48d3-a8dd-dee408bbbcd7" path="/kanawaga_dragon.theme.json"/>
+        <themeProvider id="67c79be7-79c0-4c22-a35c-f700be92859a" path="/kanawaga_lotus.theme.json"/>
     </extensions>
 </idea-plugin>
